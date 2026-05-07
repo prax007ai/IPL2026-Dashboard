@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL 2026 Analytics Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="bg-glow"></div>
+
+<header class="navbar">
+  <div>
+    <h1>IPL 2026 Analytics Hub</h1>
+    <p>Real-time Cricket Intelligence</p>
+  </div>
+  <button id="refreshBtn">Refresh Live Data</button>
+</header>
+
+<section class="ticker">
+  <marquee id="newsTicker">Loading cricket headlines...</marquee>
+</section>
+
+<section class="hero">
+  <div class="hero-card">
+    <h2>LIVE MATCHES</h2>
+    <div id="matchCards" class="grid"></div>
+  </div>
+</section>
+
+<section class="stats-grid">
+  <div class="glass-card">
+    <h3>Points Table</h3>
+    <div id="pointsTable"></div>
+  </div>
+
+  <div class="glass-card">
+    <h3>AI Playoff Predictions</h3>
+    <div id="predictionContainer"></div>
+  </div>
+</section>
+
+<section class="charts-grid">
+  <div class="glass-card">
+    <h3>Qualification Probability</h3>
+    <canvas id="qualificationChart"></canvas>
+  </div>
+
+  <div class="glass-card">
+    <h3>Momentum Trend</h3>
+    <canvas id="momentumChart"></canvas>
+  </div>
+</section>
+
+<section class="leaders-grid">
+  <div class="glass-card">
+    <h3>Orange Cap</h3>
+    <div id="orangeCap"></div>
+  </div>
+
+  <div class="glass-card">
+    <h3>Purple Cap</h3>
+    <div id="purpleCap"></div>
+  </div>
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
